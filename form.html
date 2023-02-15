@@ -11,14 +11,12 @@
 
 <body>
     <header>
+        <p>Mighty Gooners</p>
         <nav>
-            <p>Mighty Gooners</p>
-            <div>
-                <a href="index.html">Home</a>
-                <a href="form.html">Sign Up</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="links.html">News</a>
-            </div>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="form.html">Sign Up</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="links.html">News</a>
         </nav>
     </header>
 
@@ -26,29 +24,30 @@
         <h1>Sign-up to receive the latest Arsenal news</h1>
         <form action="" method="post">
             <fieldset>
-               <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-               </div>
-               <div>
-                <label for="surname">Surname</label>
-                <input type="text" name="surname" id="surname">
-               </div>
-               <div>
-                <label for="dob">Date of birth</label>
-                <input type="date" name="dob" id="dob">
-               </div>
-               <div>
-                <label for="motivational-pg">Why do you love Arsenal FC? (max 150 char)</label>
-                <textarea name="motivational-pg" id="motivational-pg" cols="30" rows="10" maxlength="150"></textarea>
-               </div>
-               <div>
-                <label for="ts-and-cs">Accept the Ts and Cs</label>
-                <input type="checkbox" name="ts-and-cs" id="ts-and-cs">
-               </div>
-               <div>
-                <button type="submit">Sign Up</button>
-               </div>
+                <div class="column-holder">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="column-holder">
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname">
+                </div>
+                <div class="column-holder">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div class="column-holder">
+                    <label for="motivational-pg" id="motivational-label">Why do you love Arsenal FC? (max 150 char)</label>
+                    <textarea name="motivational-pg" id="motivational-pg" cols="30" rows="10"
+                        maxlength="150"></textarea>
+                </div>
+                <div>
+                    <label for="ts-and-cs">Accept the Ts and Cs</label>
+                    <input type="checkbox" name="ts-and-cs" id="ts-and-cs">
+                </div>
+                <div>
+                    <button id="submit" type="submit">Sign Up</button>
+                </div>
             </fieldset>
         </form>
     </main>

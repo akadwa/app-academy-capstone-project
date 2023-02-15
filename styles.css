@@ -1,4 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@300;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* COMMENT OUT WHEN DONE */
 img {
     width: auto;
     height: 200px;
+}
+
+/* STYLES THAT APPLY TO ALL PAGES */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #E0E0E0;
+    font-weight: 300;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background-color: #f00000;
+    color: white;
+    font-weight: 900;
+}
+
+header p {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.nav-link {
+    font-size: 18px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 50px 25% 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #f00000;
+    color: white;
+    padding: 17px 0 20px;
+    font-weight: 700;
+}
+
+/* STYLES FOR INDEX/HOME PAGE */
+
+.aims-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aims-cell {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5px 0 35px;
+}
+
+.aims-cell h2 {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+#cover-image {
+    padding: 20px;
+    width: auto;
+    height: 500px;
+}
+
+
+/* STYLES FOR SIGN UP PAGE */
+
+form {
+    padding: 20px;
+}
+
+fieldset {
+    padding: 20px 100px;
+    border: 3px solid black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.column-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#motivational-label {
+    padding-bottom: 5px;
+}
+
+fieldset div {
+    padding: 7px 0;
+}
+
+#submit {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* STYLES FOR GALLERY PAGE */
+.outer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.outer img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+}
+
+/* STYLES FOR LINKS?NEWS PAGE */
+.link-container {
+    padding: 80px;
+    align-self: flex-start;
+}
+
+.link-container ul {
+    list-style-position: inside;
+}
+
+.link-container a {
+    color: black;
+    font-size: 24px;
+}
+
+.link-container li {
+    padding: 10px 0;
 }
